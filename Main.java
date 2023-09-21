@@ -1,13 +1,3 @@
-//6 string fields,
-// DESC, (Description)
-// birth SZN,
-// color,
-// weight,
-// origin 01,
-// origin 02
-// Driver class for Zoo
-
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -15,10 +5,13 @@ import java.io.IOException;
 import java.sql.Array;
 import java.util.ArrayList;
 
+
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("Welcome to my Zoo warmup!");
+
+        // How many animals do we have.
+        System.out.println("\n We have " + Animal.numofAnimals + " animals!");
 
         // Create an Animal object.
         Animal myNewAnimal = new Animal();
@@ -34,6 +27,35 @@ public class Main {
         myNewAnimal.color = "The color of the animal";
 
         System.out.println("\nThe color of this animal is: " + myNewAnimal.color);
+
+        // Create a hyena
+        Hyena myHyena = new Hyena();
+
+        Hyena myHyena02 = new Hyena();
+
+        Hyena myHyena03 = new Hyena();
+
+        // How many Hyenas do we have
+
+        System.out.println("\nWe have " + Hyena.numofHyenas + " Hyenas");
+
+
+        // Give the new hyena a name...
+        myHyena.name = "Zig";
+
+        System.out.println("\nMy new Hyena is named: " +myHyena.name);
+        myHyena.makeNoise();
+
+        // How many animals we have
+        System.out.println("\nWe have " + Animal.numofAnimals + " animals!");
+
+
+
+        System.out.println("\nHe makes this noise:" +myHyena.makeNoise2());
+
+
+
+
 
         //Create an Array list to hold the animal Objects!
 
@@ -93,7 +115,6 @@ public class Main {
             System.out.println(animal.Origin02);
             System.out.println("\n\n");
         }
-
 
 
     }
