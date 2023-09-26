@@ -1,6 +1,11 @@
 public class Animal {
 
+
     public static int numofAnimals = 0;
+
+
+
+
 
     // Create a constructor
     public Animal(){
