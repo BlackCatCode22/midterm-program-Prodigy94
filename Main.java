@@ -1,12 +1,33 @@
+
+
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.sql.Array;
+import java.text.ParseException;
 import java.util.ArrayList;
 
 
 public class Main {
+
+    // creating the genUniqueID method()
+    public static String genUniqueID(String theSpecies, int numOfSpecies){
+        String prefix = "";
+        int suffix = numOfSpecies + 1;
+
+        if (theSpecies.contains("hyena")){
+            prefix = "Hy";
+
+        }
+
+        return prefix + Integer.valueOf(suffix);
+
+
+
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome to my Zoo warmup!");
 
@@ -52,6 +73,18 @@ public class Main {
 
 
         System.out.println("\nHe makes this noise:" +myHyena.makeNoise2());
+
+        Hyena oneMore = new Hyena();
+
+        oneMore.setAnimalID("Hy09");
+
+        System.out.println("\nThe ID of oneMore is " + oneMore.getAnimalID() +"\n");
+
+        oneMore.setAnimalColor("Yellow spots");
+
+        System.out.println("\nMy Hyena is " +oneMore.getAnimalColor() +"\n");
+
+
 
 
 

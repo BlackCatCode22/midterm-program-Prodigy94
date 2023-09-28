@@ -2,11 +2,26 @@ import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Hyena extends Animal {
 
+
+    public static List<String> myListOfHyenaNames = new ArrayList<>();
+
+
+
+
+
+
     // Create a static member variable that accumulate the number of hyenas
     public static int numofHyenas = 0;
+
+
+
+
+
 
     // Lets create a constructor
     public Hyena() {
@@ -19,6 +34,7 @@ public class Hyena extends Animal {
     public String makeNoise2() {
         return "\nHUEHUEHUE\n";
     }
+
 
     public int getNumofHyenas() {
         return numofHyenas;
@@ -40,8 +56,13 @@ public class Hyena extends Animal {
             throw new RuntimeException(e);
         }
 
-        }
+        // Create an ID
+        String theNewID = Main.genUniqueID("Hyena" , 8);
+        System.out.println("\nThe new id is: " +theNewID +"\n");
+
     }
+
+}
 
 
 
