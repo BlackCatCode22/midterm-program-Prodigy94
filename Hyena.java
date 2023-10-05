@@ -10,13 +10,15 @@ public class Hyena extends Animal {
 
     public static List<String> myListOfHyenaNames = new ArrayList<>();
 
-
+    // public Static int getNumOfHyena() {return numOfHyena;}
 
 
 
 
     // Create a static member variable that accumulate the number of hyenas
     public static int numofHyenas = 0;
+
+
 
 
 
@@ -49,6 +51,10 @@ public class Hyena extends Animal {
 
             while ((myLine = reader.readLine()) != null) {
                 String[] myArray = myLine.split(",");
+
+                // if (lineNum == 7)
+                // String[] Values = line.split
+                // for (String Value: values{})
 
 
             }

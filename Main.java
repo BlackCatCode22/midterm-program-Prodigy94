@@ -12,6 +12,8 @@ import java.util.ArrayList;
 
 public class Main {
 
+
+
     // creating the genUniqueID method()
     public static String genUniqueID(String theSpecies, int numOfSpecies){
         String prefix = "";
@@ -29,6 +31,14 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        //Lion.inputLionNames();
+        //Tiger.inputTigerNames();
+        //Bear.inputBearNames();
+        //Hyena.inputHyenaNames();
+        // String path = "C:"
+        //String myFileLine="";
+        // try/catch bufferReader (only things in the Main)
+
         System.out.println("Welcome to my Zoo warmup!");
 
         // How many animals do we have.
@@ -115,6 +125,14 @@ public class Main {
                 //System.out.println("\n myArray[0] is " +myArray[0]);
                 //System.out.println("\nmyArray[1] is" + myArray[1]);
 
+                                 //String myStr = myArray[0];
+                               // System.out.println("myStr =" +myStr);
+                                //myArray = myStr.split(" ");
+                                //String mySpecies = myArray[4];
+                                //System.out.println("Species is " +mySpecies);
+                                // System.out.println("myStr =" +myStr);
+
+
                 // Create an animal object from the Animal Class
 
                 Animal anyOldAnimal = new Animal();
@@ -152,3 +170,16 @@ public class Main {
 
     }
 }
+
+//Bear.inputBearNames();
+// Bear.ListOut();
+// String myName = Bear.popBearName();
+
+//myName = Bear.popBearName();
+//myName = Bear.popBearName();
+
+
+// Tiger.inputTigerNames();
+// Tiger.ListOut();
+//String myName = Tiger.popTigerName();
+// System.Out.println("the popped hyena name is: " +Tiger.popTigerName());
