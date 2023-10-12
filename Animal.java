@@ -1,99 +1,85 @@
 import java.util.Date;
 
-
-
 public class Animal {
+    public String animalID;
+    public String animalName;
+    public String animalDesc;
+    public String animalAge; // optional
+    public String animalBirthSeason;
+    public Date animalBirthdate;
+    public String animalGender;
+    public String animalWeight;
+    public String animalColor;
+    public String origin;
 
 
-    public static int numofAnimals = 0;
 
 
-    // Animal attributes
-
-    private String animalID;
-    private String animalName;
-    private Date animalBirthdate;
-    private String animalColor;
-    private char animalGender;
-    private float animalWeight;
-    private String animalArrivingFrom;
-
-    // Animal getters and setters
-
-    public String getAnimalID(){
-        return animalID;
+    private static int animalCount = 0;
+    public Animal(){
+        animalCount++;
+    }
+    public static int getAnimalCount() {
+        return animalCount;
     }
 
-    public void setAnimalID(String animalID) {
-        this.animalID = animalID;
+    public void setAnimalDesc(String animalDesc) {
+        this.animalDesc = animalDesc;
     }
 
-
-    public String getAnimalName(){
-        return animalName;
+    public void setAnimalAge(String animalAge) {
+        this.animalAge = animalAge;
     }
 
-    public void setAnimalName(String animalName) {
-        this.animalName = animalName;
+    public void setAnimalGender(String animalGender) {
+        this.animalGender = animalGender;
     }
 
-    public Date getAnimalBirthdate(){
-        return animalBirthdate;
-    }
-
-    public void setAnimalBirthdate(Date animalBirthdate) {
-        this.animalBirthdate = animalBirthdate;
-    }
-
-    public String getAnimalColor(){
-        return  animalColor;
+    public void setAnimalBirthSeason(String animalBirthSeason) {
+        this.animalBirthSeason = animalBirthSeason;
     }
 
     public void setAnimalColor(String animalColor) {
         this.animalColor = animalColor;
     }
 
-    public char getAnimalGender(){
-        return  animalGender;
-    }
-
-    public void setAnimalGender(char animalGender) {
-        this.animalGender = animalGender;
-    }
-
-    public float getAnimalWeight(){
-        return animalWeight;
-    }
-
-    public void setAnimalWeight(float animalWeight) {
+    public void setAnimalWeight(String animalWeight) {
         this.animalWeight = animalWeight;
     }
 
-    public String getAnimalArrivingFrom(){
-        return animalArrivingFrom;
+    public void setOrigin(String origin1) {
+        this.origin = origin1;
     }
 
-    public void setAnimalArrivingFrom(String animalArrivingFrom) {
-        this.animalArrivingFrom = animalArrivingFrom;
+
+
+    public String getAnimalDesc() {
+        return animalDesc;
     }
 
-    // Create a constructor
-    public Animal(){
-        numofAnimals++;
+    public String getAnimalAge() {
+        return animalAge;
     }
 
-    String desc;
-    String name;
-    String birthSeason;
-    String color;
-    String weight;
-    String Origin01;
-    String Origin02;
-    public void makeNoise(){
-        System.out.println("\nThis is an animal object making noise...");
+    public String getAnimalGender() {
+        return animalGender;
     }
-    public String makeNoise2(){
-        return "\nThis is a str returned form a method is my animal class";
+
+    public String getAnimalBirthSeason() {
+        return animalBirthSeason;
     }
+
+    public String getAnimalColor() {
+        return animalColor;
+    }
+
+    public String getAnimalWeight() {
+        return animalWeight;
+    }
+
+    public String getOrigin() {
+        return origin;
+    }
+
+
 }
-
